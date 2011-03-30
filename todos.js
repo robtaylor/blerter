@@ -20,9 +20,9 @@ $(function(){
 
     // Ensure that each todo created has `content`.
     initialize: function() {
-      // if (!this.get("content")) {
-      //   this.set({"content": this.defaults.content});
-      // }
+      if (!this.get("content")) {
+        this.set({"content": this.defaults.content});
+      }
     },
 
     // Toggle the `done` state of this todo item.
@@ -34,10 +34,6 @@ $(function(){
     clear: function() {
       this.destroy();
       this.view.remove();
-    },
-    
-    validate: function() {
-      if (this.get('content') == '') return "must specify something";
     }
 
   });
