@@ -7,3 +7,6 @@
 [submodule "vendor/backbone"]
 	path = vendor/backbone
 	url = git://github.com/documentcloud/backbone.git
+[submodule "vendor/backbone-couchdb"]
+	path = vendor/backbone-couchdb
+	url = git://github.com/janmonschke/backbone-couchdb.git
